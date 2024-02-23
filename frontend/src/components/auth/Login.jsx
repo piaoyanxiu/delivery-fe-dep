@@ -27,7 +27,7 @@ export function Login() {
   return (
     <div id="login-page-whole">
       <div id="login-left">
-        <div id="logo">
+        <div id="logo" style={{ marginLeft: '100px' }}>
           <Logo />
         </div>
         <div id="login-page">
@@ -42,7 +42,7 @@ export function Login() {
                 <input
                   id="id"
                   type="text"
-                  name="userId"
+                  name="email"
                   placeholder="@ewhain.net"
                   value={userId}
                   onChange={handleInputChange}
@@ -51,29 +51,30 @@ export function Login() {
                 <input
                   id="pw"
                   type="password"
-                  name="userPw"
+                  name="password"
                   placeholder="비밀번호"
                   value={userPw}
                   onChange={handleInputChange}
                 />
+
                 <button type="submit" id="login-button">
                   로그인
                 </button>
               </form>
-
               <Link to="/register" id="register-button">
-                <span>아직 계정이 없으신가요?</span> <div id="green">회원가입</div>
+                <p>아직 계정이 없으신가요?</p> <div id="green">회원가입</div>
               </Link>
             </div>
           </div>
         </div>
       </div>
       <div id="login-right">
-        <img src="/assets/login-right-img1.svg" id="login-right-img1" alt="Login" />
+        {/*<img src="/assets/login-right-img1.svg" id="login-right-img1" alt="Login" />
         <img src="/assets/login-right-img3.svg" id="login-right-img2" alt="Login" />
         <h3>배달비 걱정 없이 주문하세요!</h3>
         <p>이화 공유배달은 배달 주문을 다른 사람과 공유하여 음식을 남긴다는 걱정 없이</p>
-        <p>배달비는 절감할 수 있는 신개념 공유 배달 시스템입니다.</p>
+  <p>배달비는 절감할 수 있는 신개념 공유 배달 시스템입니다.</p>*/}
+        <img src="/assets/login-right-img.svg" id="login-right-img" alt="Login" />
       </div>
     </div>
   );

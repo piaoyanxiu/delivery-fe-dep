@@ -18,3 +18,13 @@ export const BANK_LIST = [
   '농협',
   '수협',
 ];
+
+export const BankOptions = () => (
+  <>
+    {BANK_LIST.map((bank, index) => (
+      <option key={index} value={bank}>
+        {bank}
+      </option>
+    ))}
+  </>
+);

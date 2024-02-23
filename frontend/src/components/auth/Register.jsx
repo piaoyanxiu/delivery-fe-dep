@@ -27,16 +27,6 @@ export const Register = () => {
     navigate('/main');
   };
 
-  const BankOptions = () => (
-    <>
-      {BANK_LIST.map((bank, index) => (
-        <option key={index} value={bank}>
-          {bank}
-        </option>
-      ))}
-    </>
-  );
-
   return (
     <>
       <Logo />

@@ -4,6 +4,8 @@ import * as S from '../main/main.style';
 export const DeliveryItem = ({ id, restaurant, menu, timer, recruit, recruited, cost, recruiter }) => (
   <Link to={`post/${id}`}>
     <S.DeliveryItem>
+      {timer <= 5 && timer > 0 && <S.Badge>마감 임박</S.Badge>}
+
       <h4>
         [{restaurant}] {menu}
       </h4>
